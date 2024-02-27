@@ -4,7 +4,8 @@ import random
 age = input("What is your current age?\n")
 # we then convert the age to intigers
 age = int(age)
-last_year = int(random.random() * 100)
+# The maximum years are decided by the system.
+last_year = int(random.randint(age,120))
 #System guesses at random how long a user lives
 pridicted_age = random.randint(age,last_year)
 # we calculate the years one has left
